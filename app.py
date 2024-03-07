@@ -46,7 +46,7 @@ def main():
 
     st.subheader(":blue[Organizers]")
     organizers = [
-        "**Saloua Mani Alouadi**", 
+        "**Saloua Mani Aouadi**", 
         "**Giulia di Nunno**", 
         "**Olfa Draouil**", 
         "**Martin Friesen**", 
