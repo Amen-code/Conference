@@ -25,7 +25,7 @@ def main():
 
     # Display hotel image
         
-    st.image('hotel.jpg', width = 750 ,output_format = "JPEG")
+    st.image('hotel.jpg', width = 700 ,output_format = "JPEG")
     
     st.subheader(":blue[Call for Abstracts]")
     st.write("A call for abstract is open to propose a contributed talk or a poster. There are limited slots for contributed talks. The form is [here](https://forms.gle/FXaQ37w8x7CHxDL99).")
