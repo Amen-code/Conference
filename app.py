@@ -42,7 +42,7 @@ def main():
     st.write("The best way to reach the conference venue for international participants is to fly to the International airport of Tunis-Carthage. Local transportation between the airport and the conference hotel is organized and included in the rates. Please fill the registration form above to secure the service.")
 
     st.subheader(":blue[Sponsors]")
-    st.write("This event is organized by the collaboration of several universities and organizations. Financial support is also received from FWO Scientific Research Network ModSimFIE")
+    st.write("This event is organized by the collaboration of several universities and organizations. Financial support is also received from FWO Scientific Research Network ModSimFIE.")
 
     st.subheader(":blue[Organizers]")
     organizers = [
