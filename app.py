@@ -34,7 +34,7 @@ def main():
     # Button to register (redirects to Google Form)
     st.subheader(":blue[ For Registration]")
     st.write("The registration form is available [here](https://docs.google.com/forms/d/e/1FAIpQLScJtPavmI45WvgrrMSHVJUc6xAcEktuBd--JZ53DgQWjVBZXg/viewform).")
-    st.error("Deadline for submission is September 5th. You will be notified about your proposed talk/poster within September 15th.")
+    st.error("Deadline for submission is September 5th.")
 
     st.subheader(":blue[Program]")
     st.write("A full list of speakers will be available together with the program.")
