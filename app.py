@@ -3,8 +3,7 @@ import streamlit as st
 
 
 def generate_card(name, university):
-    st.write(f"**{name}**")
-    st.write(f"*{university}*")
+    st.write(f"**{name}, {university}**")
     
     
 def main():
@@ -12,7 +11,6 @@ def main():
     st.title("Stochastics in Mathematical Finance and Physics Conference")
     st.markdown('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">', unsafe_allow_html=True)
     st.markdown("Time and place: <i class='fas fa-clock'></i> Oct. 21–Oct. 25, 2024, <i class='fas fa-map-marker-alt'></i> Radisson Blue Resort Thalasso, Hammamet, Tunisia", unsafe_allow_html=True)
-    st.write("---")
     st.write("The conference is an occasion to bring together researchers in the beautiful Hammamet to discuss recent developments in stochastics with applications to mathematical   finance and  physics")
     # Display conference name
     st.markdown("""
@@ -52,17 +50,17 @@ def main():
 
     st.subheader(":blue[Organizers]")
     organizers = [
-    ("Saloua Mani Aouadi", "Tunis El Manar University"),
-    ("Giulia di Nunno", "University of Oslo"),
-    ("Olfa Draouil", "Tunis El Manar University"),
-    ("Martin Friesen", "Dublin City University"),
-    ("Asma Khedher", "University of Amsterdam"),
-    ("Astrid Hilbert", "Linnaeus University"),
-    ("Bernt Øksendal", "University of Oslo"),
-    ("Barbara Rüdiger", "Bergische University Wuppertal"),
-    ("Nizar Touzi", "New York University"),
-    ("Michèle Vanmaele", "Ghent University"),
-    ("Josef Teichmann", "ETH Zürich")
+    ("Saloua Mani Aouadi", "(Tunis El Manar University)"),
+    ("Giulia di Nunno", "(University of Oslo)"),
+    ("Olfa Draouil", "(Tunis El Manar University)"),
+    ("Martin Friesen", "(Dublin City University)"),
+    ("Asma Khedher", "(University of Amsterdam)"),
+    ("Astrid Hilbert", "(Linnaeus University)"),
+    ("Bernt Øksendal", "(University of Oslo)"),
+    ("Barbara Rüdiger", "(Bergische University Wuppertal)"),
+    ("Nizar Touzi", "(New York University)"),
+    ("Michèle Vanmaele", "(Ghent University)"),
+    ("Josef Teichmann", "(ETH Zürich)")
 ]
     for i in range(0, len(organizers), 3):
         row = organizers[i:i+3]
@@ -78,7 +76,7 @@ def main():
             if i + 2 < len(organizers):
                 generate_card(row[2][0], row[2][1])
     
-    
+    st.image("Logo.png")
     
     
 if __name__ == '__main__':

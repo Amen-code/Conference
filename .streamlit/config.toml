@@ -4,7 +4,7 @@ primaryColor = "#F63366"
 
 # Background color for the main content area.
 backgroundColor = "white"
-font = "sans-serif"
+font = "sans serif"
 
 # Background color used for the sidebar and most interactive widgets.
 
