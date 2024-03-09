@@ -1,14 +1,19 @@
 import streamlit as st
 
-# List of random visitor names
 
+
+def generate_card(name, university):
+    st.write(f"**{name}**")
+    st.write(f"*{university}*")
+    
+    
 def main():
-    st.set_page_config(" Hammamet conference 2024",page_icon="conference.png")
+    st.set_page_config(" Hammamet conference 2023-2024",page_icon="Logo.png")
     st.title("Stochastics in Mathematical Finance and Physics Conference")
     st.markdown('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">', unsafe_allow_html=True)
-    st.markdown("Time and place: <i class='fas fa-clock'></i> Oct. 21–Oct. 25, 2024, <i class='fas fa-map-marker-alt'></i> Radisson Blue Resort Thalasso, Hammamet, Tunisia", unsafe_allow_html=True)
-    st.write("The conference is an occasion to bring together researchers in the beautiful Hammamet to discuss recent developments in stochastics with applications to mathematical finance and  physics  .")
-    
+    st.markdown("Time and place: <i class='fas fa-clock'></i> Oct. 21–Oct. 25, 2023, <i class='fas fa-map-marker-alt'></i> Radisson Blue Resort Thalasso, Hammamet, Tunisia", unsafe_allow_html=True)
+    st.write("---")
+    st.write("The conference is an occasion to bring together researchers in the beautiful Hammamet to discuss recent developments in stochastics with applications to mathematical physics and finance.")
     # Display conference name
     st.markdown("""
     
@@ -25,7 +30,7 @@ def main():
     )  
 
     # Display hotel image
-        
+    
     st.image('hotel.jpg', width = 600 ,output_format = "JPEG")
     
     st.subheader(":blue[Call for Abstracts]")
@@ -43,22 +48,38 @@ def main():
     st.write("The best way to reach the conference venue for international participants is to fly to the International airport of Tunis-Carthage. Local transportation between the airport and the conference hotel is organized and included in the rates. Please fill the registration form above to secure the service.")
 
     st.subheader(":blue[Sponsors]")
-    st.write("This event is organized by the collaboration of several universities and organizations. Financial support is also received from FWO Scientific Research Network ModSimFIE.")
+    st.write("This event is organized by the collaboration of several universities and organizations. Financial support is also received from FWO Scientific Research Network ModSimFIE and DAAD- Deutscher Akademischer Austauschdienst with funds from the German Foreign Office.")
 
     st.subheader(":blue[Organizers]")
     organizers = [
-        "**Saloua Mani Aouadi**", 
-        "**Giulia di Nunno**", 
-        "**Olfa Draouil**", 
-        "**Martin Friesen**", 
-        "**Asma Khedher**", 
-        "**Astrid Hilbert**", 
-        "**Bernt Øksendal**", 
-        "**Barbara Rüdiger**",
-        "**Josef Teichmann**",
-        "**Nizar Touzi**",
-        "**Michèle Vanmaele**"
-    ]
-    st.write(", ".join(organizers))
+    ("Saloua Mani Aouadi", "Tunis El Manar University"),
+    ("Giulia di Nunno", "University of Oslo"),
+    ("Olfa Draouil", "Tunis El Manar University"),
+    ("Martin Friesen", "Dublin City University"),
+    ("Asma Khedher", "University of Amsterdam"),
+    ("Astrid Hilbert", "Linnaeus University"),
+    ("Bernt Øksendal", "University of Oslo"),
+    ("Barbara Rüdiger", " Bergische University Wuppertal"),
+    ("Nizar Touzi", "New York University)"),
+    ("Michèle Vanmaele", "Ghent University"),
+    ("Josef Teichmann", "ETH Zürich")
+]
+    for i in range(0, len(organizers), 3):
+        row = organizers[i:i+3]
+        col1, col2, col3 = st.columns(3)
+
+        with col1:
+            if i < len(organizers):
+                generate_card(row[0][0], row[0][1])
+        with col2:
+            if i + 1 < len(organizers):
+                generate_card(row[1][0], row[1][1])
+        with col3:
+            if i + 2 < len(organizers):
+                generate_card(row[2][0], row[2][1])
+    
+    
+    
+    
 if __name__ == '__main__':
     main()
