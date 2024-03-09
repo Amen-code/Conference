@@ -11,9 +11,9 @@ def main():
     st.set_page_config(" Hammamet conference 2023-2024",page_icon="Logo.png")
     st.title("Stochastics in Mathematical Finance and Physics Conference")
     st.markdown('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">', unsafe_allow_html=True)
-    st.markdown("Time and place: <i class='fas fa-clock'></i> Oct. 21–Oct. 25, 2023, <i class='fas fa-map-marker-alt'></i> Radisson Blue Resort Thalasso, Hammamet, Tunisia", unsafe_allow_html=True)
+    st.markdown("Time and place: <i class='fas fa-clock'></i> Oct. 21–Oct. 25, 2024, <i class='fas fa-map-marker-alt'></i> Radisson Blue Resort Thalasso, Hammamet, Tunisia", unsafe_allow_html=True)
     st.write("---")
-    st.write("The conference is an occasion to bring together researchers in the beautiful Hammamet to discuss recent developments in stochastics with applications to mathematical physics and finance.")
+    st.write("The conference is an occasion to bring together researchers in the beautiful Hammamet to discuss recent developments in stochastics with applications to mathematical   finance and  physics")
     # Display conference name
     st.markdown("""
     
@@ -48,7 +48,7 @@ def main():
     st.write("The best way to reach the conference venue for international participants is to fly to the International airport of Tunis-Carthage. Local transportation between the airport and the conference hotel is organized and included in the rates. Please fill the registration form above to secure the service.")
 
     st.subheader(":blue[Sponsors]")
-    st.write("This event is organized by the collaboration of several universities and organizations. Financial support is also received from FWO Scientific Research Network ModSimFIE and DAAD- Deutscher Akademischer Austauschdienst with funds from the German Foreign Office.")
+    st.write("This event is organized by the collaboration of several universities and organizations. Financial support is also received from FWO Scientific Research Network ModSimFIE .")
 
     st.subheader(":blue[Organizers]")
     organizers = [
