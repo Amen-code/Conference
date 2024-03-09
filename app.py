@@ -31,7 +31,7 @@ def main():
     
     st.image('hotel.jpg', width = 600 ,output_format = "JPEG")
     
-    st.subheader(":blue[For Registration]")
+    st.subheader(":blue[Call for Abstracts]")
     st.write("A call for abstract is open to propose a contributed talk or a poster. There are limited slots for contributed talks. The form is [here](https://forms.gle/FXaQ37w8x7CHxDL99).")
 
     # Button to register (redirects to Google Form)
