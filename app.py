@@ -59,8 +59,8 @@ def main():
     ("Asma Khedher", "University of Amsterdam"),
     ("Astrid Hilbert", "Linnaeus University"),
     ("Bernt Øksendal", "University of Oslo"),
-    ("Barbara Rüdiger", " Bergische University Wuppertal"),
-    ("Nizar Touzi", "New York University)"),
+    ("Barbara Rüdiger", "Bergische University Wuppertal"),
+    ("Nizar Touzi", "New York University"),
     ("Michèle Vanmaele", "Ghent University"),
     ("Josef Teichmann", "ETH Zürich")
 ]
