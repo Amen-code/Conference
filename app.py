@@ -31,13 +31,13 @@ def main():
     
     st.image('hotel.jpg', width = 600 ,output_format = "JPEG")
     
-    st.subheader(":blue[Call for Abstracts]")
+    st.subheader(":blue[For Registration]")
     st.write("A call for abstract is open to propose a contributed talk or a poster. There are limited slots for contributed talks. The form is [here](https://forms.gle/FXaQ37w8x7CHxDL99).")
-    st.error("Deadline for submission is September 5th. You will be notified about your proposed talk/poster within September 15th.")
 
     # Button to register (redirects to Google Form)
     st.subheader(":blue[Registration]")
     st.write("The registration form is available [here](https://docs.google.com/forms/d/e/1FAIpQLScJtPavmI45WvgrrMSHVJUc6xAcEktuBd--JZ53DgQWjVBZXg/viewform).")
+    st.error("Deadline for submission is September 5th. You will be notified about your proposed talk/poster within September 15th.")
 
     st.subheader(":blue[Program]")
     st.write("A full list of speakers will be available together with the program.")
