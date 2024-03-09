@@ -3,7 +3,7 @@ import streamlit as st
 
 
 def generate_card(name, university):
-    st.write(f"**{name}, {university}**")
+    st.write(f"**{name}  {university}**")
     
     
 def main():
@@ -35,7 +35,7 @@ def main():
     st.write("A call for abstract is open to propose a contributed talk or a poster. There are limited slots for contributed talks. The form is [here](https://forms.gle/FXaQ37w8x7CHxDL99).")
 
     # Button to register (redirects to Google Form)
-    st.subheader(":blue[Registration]")
+    st.subheader(":blue[ For Registration]")
     st.write("The registration form is available [here](https://docs.google.com/forms/d/e/1FAIpQLScJtPavmI45WvgrrMSHVJUc6xAcEktuBd--JZ53DgQWjVBZXg/viewform).")
     st.error("Deadline for submission is September 5th. You will be notified about your proposed talk/poster within September 15th.")
 
