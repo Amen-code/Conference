@@ -39,6 +39,10 @@ def main():
     st.subheader(":blue[Program]")
     st.write("A full list of speakers will be available together with the program.")
 
+    
+    st.subheader(":blue[ Call For Abstract]")
+    st.write(" A call for abstract is open to propose a contributed talk or a poster. The form is   [here]( https://docs.google.com/forms/d/e/1FAIpQLSfd957l7l_U6Vi1_bLuK79Qf72uC6RvSQ1alwZmSRl9xOhLXQ/viewform?usp=pp_url ) .")
+    
     st.subheader(":blue[Transport]")
     st.write("The best way to reach the conference venue for international participants is to fly to the International airport of Tunis-Carthage. Local transportation between the airport and the conference hotel is organized and included in the rates. Please fill the registration form above to secure the service.")
 
