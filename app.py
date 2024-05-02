@@ -8,12 +8,12 @@ def generate_card(name, university):
     
     
 def main():
-    st.set_page_config(" Hammamet conference 2023-2024",page_icon="Logo.png",layout="wide")
+    st.set_page_config(" Hammamet conference 2023-2024",page_icon="Logo.png")
     st.title("Stochastics in Mathematical Finance and Physics Conference")
     st.markdown('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">', unsafe_allow_html=True)
-    st.markdown("Time and place: <i class='fas fa-clock'></i> Oct. 21-Oct. 25, 2023, <i class='fas fa-map-marker-alt'></i> Radisson Blue Resort Thalasso, Hammamet, Tunisia", unsafe_allow_html=True)
+    st.markdown("Time and place: <i class='fas fa-clock'></i> Oct. 21-Oct. 25, 2024, <i class='fas fa-map-marker-alt'></i> Radisson Blue Resort Thalasso, Hammamet, Tunisia", unsafe_allow_html=True)
     st.write("---")
-    st.write("The conference is an occasion to bring together researchers in the beautiful Hammamet to discuss recent developments in stochastics with applications to mathematical physics and finance.")
+    st.write("The conference is an occasion to bring together researchers in the beautiful Hammamet to discuss recent developments in stochastics with applications to mathematical physics and finance,The link of the previous conference is available [here](https://www.mn.uio.no/math/english/research/projects/storm/events/conferences/Stochastics%20in%20Mathematical%20Finance%20and%20Physics/).")
     # Display conference name
     st.markdown("""
     
@@ -43,7 +43,7 @@ def main():
     # Button to register (redirects to Google Form)
     st.subheader(":blue[Registration]")
     st.write("The registration form is available [here](https://docs.google.com/forms/d/e/1FAIpQLScJtPavmI45WvgrrMSHVJUc6xAcEktuBd--JZ53DgQWjVBZXg/viewform).")
-    st.error("Deadline for submission is September 5th. You will be notified about your proposed talk/poster within September 15th.")
+    st.error("Deadline for Registration is 5 Semtember.")
     # URL for the International airport of Tunis-Carthage
     airport_url = "https://www.tunis-airport.com"
 
@@ -66,8 +66,8 @@ def main():
     ("Giulia di Nunno", "University of Oslo"),
     ("Olfa Draouil", "Tunis El Manar University"),
     ("Martin Friesen", "Dublin City University"),
-    ("Asma Khedher", "University of Amsterdam"),
     ("Astrid Hilbert", "Linnaeus University"),
+    ("Asma Khedher", "University of Amsterdam"),
     ("Bernt Øksendal", "University of Oslo"),
     ("Barbara Rüdiger", "Bergische University Wuppertal"),
     ("Josef Teichmann", "ETH Zürich"),
