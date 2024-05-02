@@ -13,7 +13,7 @@ def main():
     st.markdown('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">', unsafe_allow_html=True)
     st.markdown("Time and place: <i class='fas fa-clock'></i> Oct. 21-Oct. 25, 2024, <i class='fas fa-map-marker-alt'></i> Radisson Blue Resort Thalasso, Hammamet, Tunisia", unsafe_allow_html=True)
     st.write("---")
-    st.write("The conference is an occasion to bring together researchers in the beautiful Hammamet to discuss recent developments in stochastics with applications to mathematical physics and finance,The link of the previous conference is available [here](https://www.mn.uio.no/math/english/research/projects/storm/events/conferences/Stochastics%20in%20Mathematical%20Finance%20and%20Physics/).")
+    st.write("The conference is an occasion to bring together researchers in the beautiful Hammamet to discuss recent developments in stochastics with applications to mathematical physics and finance. The link of the previous conference is available [here](https://www.mn.uio.no/math/english/research/projects/storm/events/conferences/Stochastics%20in%20Mathematical%20Finance%20and%20Physics/).")
     # Display conference name
     st.markdown("""
     
@@ -43,7 +43,7 @@ def main():
     # Button to register (redirects to Google Form)
     st.subheader(":blue[Registration]")
     st.write("The registration form is available [here](https://docs.google.com/forms/d/e/1FAIpQLScJtPavmI45WvgrrMSHVJUc6xAcEktuBd--JZ53DgQWjVBZXg/viewform).")
-    st.error("Deadline for Registration is 5 Semtember.")
+    st.error("Deadline for Registration is September 5th.")
     # URL for the International airport of Tunis-Carthage
     airport_url = "https://www.tunis-airport.com"
 
