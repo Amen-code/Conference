@@ -8,7 +8,7 @@ def generate_card(name, university):
     
     
 def main():
-    st.set_page_config(" Hammamet conference 2023-2024",page_icon="Logo.png")
+    st.set_page_config(" Hammamet conference 2023-2024",page_icon="Logo.png",layout="wide")
     st.title("Stochastics in Mathematical Finance and Physics Conference")
     st.markdown('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">', unsafe_allow_html=True)
     st.markdown("Time and place: <i class='fas fa-clock'></i> Oct. 21-Oct. 25, 2023, <i class='fas fa-map-marker-alt'></i> Radisson Blue Resort Thalasso, Hammamet, Tunisia", unsafe_allow_html=True)
