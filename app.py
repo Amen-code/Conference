@@ -42,27 +42,45 @@ def main():
     #Program
     
     st.subheader(":blue[Program]")
-    st.write("\nA full list of speakers will be available together with the program. This includes:\n\nSpeakers:")
-    speakers = [
+    st.write("Program\nA full list of speakers will be available together with the program. This includes:\n\nSpeakers:")
+    # List of speakers
+    plenary_speakers = [
         "Francesco Russo", "Fabrice Djete", "Sigrid Kallblad", "Jorge Cardona", "Stefan Gerhold",
-        "Daniel Linders", "Christian Bayer", "Sonja Cox", "Blanka Horvath", "Benjamin Jourdain",
-        "Hedi Nabli", "Christa Cuchiero", "Griselda Deelstra", "Sven Karbach", "Pere Diaz",
-        "Stefan Tappe", "Mohamed Ben Alaya", "Mohamed Mnif", "Anis Rezgui", "Boris Jidjou Moghomye",
-        "Mohamed Louriki", "Youssef Ouknine", "Roger Pettersson", "Wolfgang Bock", "Nacira Agram",
-        "Florian Krach", "Francesca Primavera", "Michele Vanmaele", "Josef Teichmann", "Nizar Touzi",
-        "Martin Friesen", "Bernt Oksendal", "Barbara Rudiger", "Giulia Di Nunno", "Astrid Hilbert",
-        "Olfa Draouil", "Asma Khedher", "Thijs Maessen", "Kristof Wiedermann", "Ole Canadas",
-        "Emmet Lawless", "Ihsan Arharas", "Irene Ventura"
+        "Daniel Linders", "Christian Bayer", "Sonja Cox", "Blanka Horvath", "Benjamin Jourdain", "Hedi Nabli"
     ]
-    speakers_sorted = sorted(speakers, key=lambda name: name.split()[-1])
-
-    for i in range(0, len(speakers_sorted), 3):
+    
+    invited_speakers = [
+        "Christa Cuchiero", "Griselda Deelstra", "Sven Karbach", "Pere Diaz", "Stefan Tappe", 
+        "Mohamed Ben Alaya", "Mohamed Mnif", "Anis Rezgui", "Boris Jidjou Moghomye", "Mohamed Louriki",
+        "Youssef Ouknine", "Roger Pettersson", "Wolfgang Bock", "Nacira Agram", "Florian Krach", 
+        "Francesca Primavera", "Thijs Maessen", "Kristof Wiedermann", "Ole Canadas", "Emmet Lawless", 
+        "Ihsan Arharas", "Irene Ventura"
+    ]
+    
+    # Sort the speakers alphabetically by last name
+    plenary_speakers_sorted = sorted(plenary_speakers, key=lambda name: name.split()[-1])
+    invited_speakers_sorted = sorted(invited_speakers, key=lambda name: name.split()[-1])
+    
+    # Display Plenary Speakers
+    st.subheader("Plenary Speakers")
+    for i in range(0, len(plenary_speakers_sorted), 3):
         cols = st.columns(3)
         for j, col in enumerate(cols):
-            if i + j < len(speakers_sorted):
+            if i + j < len(plenary_speakers_sorted):
                 with col:
-                    generate_names(speakers_sorted[i + j])
-
+                    generate_names(plenary_speakers_sorted[i + j])
+    
+    st.write("---")
+    
+    # Display Invited Speakers
+    st.subheader("Invited Speakers")
+    for i in range(0, len(invited_speakers_sorted), 3):
+        cols = st.columns(3)
+        for j, col in enumerate(cols):
+            if i + j < len(invited_speakers_sorted):
+                with col:
+                    generate_names(invited_speakers_sorted[i + j])
+    
     st.write("---")
 
 
