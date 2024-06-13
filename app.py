@@ -42,7 +42,7 @@ def main():
     #Program
     
     st.subheader(":blue[Program]")
-    st.write("Program\nA full list of speakers will be available together with the program. This includes:\n\nSpeakers:")
+    st.write("\nA full list of speakers will be available together with the program. This includes:\n\nSpeakers:")
     # List of speakers
     plenary_speakers = [
         "Francesco Russo", "Fabrice Djete", "Sigrid Kallblad", "Jorge Cardona", "Stefan Gerhold",
