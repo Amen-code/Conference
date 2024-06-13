@@ -48,7 +48,7 @@ def main():
         "Daniel Linders", "Christian Bayer", "Sonja Cox", "Blanka Horvath", "Benjamin Jourdain",
         "Hedi Nabli", "Christa Cuchiero", "Griselda Deelstra", "Sven Karbach", "Pere Diaz",
         "Stefan Tappe", "Mohamed Ben Alaya", "Mohamed Mnif", "Anis Rezgui", "Boris Jidjou Moghomye",
-        "Mohamed Louriki", "Youssef Ouknine", "Roger Pettersson", " Wolfgang Bock", "Nacira Agram",
+        "Mohamed Louriki", "Youssef Ouknine", "Roger Pettersson", "Wolfgang Bock", "Nacira Agram",
         "Florian Krach", "Francesca Primavera", "Michele Vanmaele", "Josef Teichmann", "Nizar Touzi",
         "Martin Friesen", "Bernt Oksendal", "Barbara Rudiger", "Giulia Di Nunno", "Astrid Hilbert",
         "Olfa Draouil", "Asma Khedher", "Thijs Maessen", "Kristof Wiedermann", "Ole Canadas",
