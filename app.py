@@ -42,7 +42,7 @@ def main():
     #Program
     
     st.subheader(":blue[Program]")
-    st.write("\nA full list of speakers will be available together with the program. This includes:\n\nSpeakers:")
+    st.write("\nA full list of speakers will be available together with the program. This includes:")
     # List of speakers
     plenary_speakers = [
         "Francesco Russo", "Fabrice Djete", "Sigrid Kallblad", "Jorge Cardona", "Stefan Gerhold",
@@ -62,7 +62,7 @@ def main():
     invited_speakers_sorted = sorted(invited_speakers, key=lambda name: name.split()[-1])
     
     # Display Plenary Speakers
-    st.subheader("Plenary Speakers")
+    st.subheader("Plenary speakers")
     for i in range(0, len(plenary_speakers_sorted), 3):
         cols = st.columns(3)
         for j, col in enumerate(cols):
@@ -73,7 +73,7 @@ def main():
     st.write("---")
     
     # Display Invited Speakers
-    st.subheader("Invited Speakers")
+    st.subheader("Invited speakers")
     for i in range(0, len(invited_speakers_sorted), 3):
         cols = st.columns(3)
         for j, col in enumerate(cols):
