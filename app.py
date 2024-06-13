@@ -5,7 +5,9 @@ import streamlit as st
 def generate_card(name, university):
     st.write(f"**{name}**")
     st.write(f"*{university}*")
-    
+
+def generate_names(name):
+    st.write(f"**{name}**")
     
 def main():
     st.set_page_config(" Hammamet conference 2023-2024",page_icon="Logo.png")
@@ -38,8 +40,33 @@ def main():
     st.error("Deadline for submission is September 5th. You will be notified about your proposed talk/poster within September 15th.")
     
     #Program
+    
     st.subheader(":blue[Program]")
-    st.write("A full list of speakers will be available together with the program.")
+    st.write("Program\nA full list of speakers will be available together with the program. This includes:\n\nSpeakers:")
+    speakers = [
+        "Francesco Russo", "Fabrice Djete", "Sigrid Kallblad", "Jorge Cardona", "Stefan Gerhold",
+        "Daniel Linders", "Christian Bayer", "Sonja Cox", "Blanka Horvath", "Benjamin Jourdain",
+        "Hedi Nabli", "Christa Cuchiero", "Griselda Deelstra", "Sven Karbach", "Pere Diaz",
+        "Stefan Tappe", "Mohamed Ben Alaya", "Mohamed Mnif", "Anis Rezgui", "Boris Jidjou Moghomye",
+        "Mohamed Louriki", "Youssef Ouknine", "Roger Pettersson", "Bock Wolfgang", "Nacira Agram",
+        "Florian Krach", "Francesca Primavera", "Michele Vanmaele", "Josef Teichmann", "Nizar Touzi",
+        "Martin Friesen", "Bernt Oksendal", "Barbara Rudiger", "Giulia Di Nunno", "Astrid Hilbert",
+        "Olfa Draouil", "Asma Khedher", "Thijs Maessen", "Kristof Wiedermann", "Ole Canadas",
+        "Emmet Lawless", "Ihsan Arharas", "Irene Ventura"
+    ]
+    speakers_sorted = sorted(speakers, key=lambda name: name.split()[-1])
+
+    for i in range(0, len(speakers_sorted), 3):
+        cols = st.columns(3)
+        for j, col in enumerate(cols):
+            if i + j < len(speakers_sorted):
+                with col:
+                    generate_names(speakers_sorted[i + j])
+
+    st.write("---")
+
+
+
     # Button to register (redirects to Google Form)
     st.subheader(":blue[Registration]")
     st.write("The registration form is available [here](https://docs.google.com/forms/d/e/1FAIpQLScJtPavmI45WvgrrMSHVJUc6xAcEktuBd--JZ53DgQWjVBZXg/viewform).")
