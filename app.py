@@ -53,7 +53,7 @@ def main():
         "Christa Cuchiero", "Griselda Deelstra", "Sven Karbach", "Pere Diaz", "Stefan Tappe", 
         "Mohamed Ben Alaya", "Mohamed Mnif", "Anis Rezgui", "Boris Jidjou Moghomye", "Mohamed Louriki",
         "Youssef Ouknine", "Roger Pettersson", "Wolfgang Bock", "Nacira Agram", "Florian Krach", 
-        "Francesca Primavera", "Thijs Maessen", "Kristof Wiedermann", "Ole Canadas", "Emmet Lawless", 
+        "Francesca Primavera" , "Kristof Wiedermann", "Ole Canadas", "Emmet Lawless", 
         "Ihsan Arharas", "Irene Ventura"
     ]
     
@@ -62,7 +62,7 @@ def main():
     invited_speakers_sorted = sorted(invited_speakers, key=lambda name: name.split()[-1])
     
     # Display Plenary Speakers
-    st.subheader("Plenary speakers")
+    st.subheader("List of confirmed Plenary speakers")
     for i in range(0, len(plenary_speakers_sorted), 3):
         cols = st.columns(3)
         for j, col in enumerate(cols):
@@ -73,7 +73,7 @@ def main():
     st.write("---")
     
     # Display Invited Speakers
-    st.subheader("Invited speakers")
+    st.subheader(" List of confirmed Invited speakers")
     for i in range(0, len(invited_speakers_sorted), 3):
         cols = st.columns(3)
         for j, col in enumerate(cols):
