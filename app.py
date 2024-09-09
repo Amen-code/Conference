@@ -88,6 +88,8 @@ def main():
     # Button to register (redirects to Google Form)
     st.subheader(":blue[Registration]")
     st.write("The registration form is available [here](https://docs.google.com/forms/d/e/1FAIpQLScJtPavmI45WvgrrMSHVJUc6xAcEktuBd--JZ53DgQWjVBZXg/viewform).")
+    st.write("Arrival and departure form is available [here](https://docs.google.com/forms/d/e/1FAIpQLSdlT_ZsluYUIvS6xoM3ubXn7oDbvxRQudjvBJl6Iv6Yavubnw/viewform?usp=sf_link).")
+
     st.error("Deadline for Registration is September 5th.")
     # URL for the International airport of Tunis-Carthage
     airport_url = "https://www.tunis-airport.com"
