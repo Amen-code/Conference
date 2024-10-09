@@ -102,7 +102,10 @@ def main():
     hotel_url = "https://www.radissonhotels.com/en-us/hotels/radisson-blu-resort-hammamet"
 
     st.subheader(":blue[Fees]")
-    st.markdown(f"The conference is organised at the **[{hotel_name}]({hotel_url})**. The hotel provides all the necessary services for the event in a beautiful location. The local organisers have arranged some special rates for the days of the event for the registered participants: Full-board basis (night, breakfast, lunch, coffee breaks, dinner and transportation from Tunis airport to the hotel ): €140 per person and per day. Accompanying persons are accommodated with full-board at €100 per person and per day.")
+    st.markdown(f"The conference is organised at the **[{hotel_name}]({hotel_url})**. The hotel provides all the necessary services for the event in a beautiful location. The local organisers have arranged some special rates for the days of the event for the registered participants: Full-board basis (night, breakfast, lunch, coffee breaks, dinner, transportation from Tunis airport to the hotel, excursion and conference dinner): €135 per person and per day. Accompanying persons are accommodated with full-board at €100 per person and per day.")
+    st.subheader(":blue[Excursion ]")
+    st.markdown('We are organizing a guided excursion to the Amphitheatre of El Jem, a remarkable historical site known for its impressive Roman architecture and well-preserved condition. A professional guide will accompany the group to ensure an informative and enriching experience.There are no additional fees for the excursion.')
+    st.image('EL Jam.jpg', width = 600 ,output_format = "JPEG")
 
     st.subheader(":blue[Sponsors]")
     st.write("This event is organized by the collaboration of several universities and organizations. Financial support is also received from FWO Scientific Research Network ModSimFIE and DAAD- Deutscher Akademischer Austauschdienst with funds from the German Foreign Office.")
