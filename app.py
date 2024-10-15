@@ -103,7 +103,7 @@ def main():
     st.subheader(":blue[Fees]")
     st.markdown(f"The conference is organised at the **[{hotel_name}]({hotel_url})**. The hotel provides all the necessary services for the event in a beautiful location. The local organisers have arranged some special rates for the days of the event for the registered participants: Full-board basis (night, breakfast, lunch, coffee breaks, dinner, transportation from Tunis airport to the hotel, excursion and conference dinner): €135 per person and per day. Accompanying persons are accommodated with full-board at €100 per person and per day.")
     st.subheader(":blue[Excursion ]")
-    st.markdown('We are organizing a guided excursion to the Amphitheatre of El Jem, a remarkable historical site known for its impressive Roman architecture and well-preserved condition. A professional guide will accompany the group to ensure an informative and enriching experience.There are no additional fees for the excursion.')
+    st.markdown('We are organizing a guided excursion to the Amphitheatre of El Jem, a remarkable historical site known for its impressive Roman architecture and well-preserved condition. A professional guide will accompany the group to ensure an informative and enriching experience.There are no additional fees for the excursion. The excursion will take place on Wednesday, followed by a Conference dinner in the evening. There are no additional fees for the excursion.')
     st.image('EL Jam.jpg', width = 600 ,output_format = "JPEG")
 
     st.subheader(":blue[Sponsors]")
