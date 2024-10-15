@@ -52,9 +52,8 @@ def main():
     invited_speakers = [
         "Christa Cuchiero", "Griselda Deelstra", "Sven Karbach", "Pere Diaz", "Stefan Tappe", 
         "Mohamed Ben Alaya", "Mohamed Mnif", "Anis Rezgui", "Boris Jidjou Moghomye", "Mohamed Louriki",
-        "Youssef Ouknine", "Roger Pettersson", "Wolfgang Bock", "Nacira Agram", "Florian Krach", 
-        "Francesca Primavera" , "Kristof Wiedermann", "Ole Canadas", "Emmet Lawless", 
-        "Ihsan Arharas", "Irene Ventura"
+        "Youssef Ouknine", "Roger Pettersson", "Nacira Agram", "Florian Krach", 
+        "Francesca Primavera" , "Kristof Wiedermann", "Ole Canadas", "Emmet Lawless"
     ]
     
     # Sort the speakers alphabetically by last name
