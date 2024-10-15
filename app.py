@@ -45,7 +45,7 @@ def main():
     st.write("\nA full list of speakers will be available together with the program. This includes:")
     # List of speakers
     plenary_speakers = [
-        "Francesco Russo", "Fabrice Djete", "Sigrid Kallblad", "Jorge Cardona", "Stefan Gerhold",
+        "Francesco Russo", "Fabrice Djete", "Thorsten Schmidt", "Jorge Cardona", "Stefan Gerhold",
         "Daniel Linders", "Christian Bayer", "Sonja Cox", "Blanka Horvath", "Benjamin Jourdain", "Hedi Nabli"
     ]
     
