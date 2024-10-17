@@ -45,7 +45,7 @@ def main():
     st.write("\nA full list of speakers will be available together with the program. This includes:")
     # List of speakers
     plenary_speakers = [
-        "Francesco Russo", "Fabrice Djete", "Thorsten Schmidt", "Jorge Cardona", "Stefan Gerhold",
+        "Francesco Russo", "Fabrice Djete", "Thorsten Schmidt", "Jean Daniel Mukam", "Stefan Gerhold",
         "Daniel Linders", "Christian Bayer", "Sonja Cox", "Blanka Horvath", "Benjamin Jourdain", "Hedi Nabli"
     ]
     
@@ -53,7 +53,7 @@ def main():
         "Christa Cuchiero", "Griselda Deelstra", "Sven Karbach", "Pere Diaz", "Stefan Tappe", 
         "Mohamed Ben Alaya", "Mohamed Mnif", "Anis Rezgui", "Boris Jidjou Moghomye", "Mohamed Louriki",
         "Youssef Ouknine", "Roger Pettersson", "Nacira Agram", "Florian Krach", 
-        "Francesca Primavera" , "Kristof Wiedermann", "Ole Canadas", "Emmet Lawless"
+        "Francesca Primavera" , "Kristof Wiedermann", "Ole Canadas", "Emmet Lawless","Naoufel Salhi","Chiraz Trabelsi","Andreas Petrsson","Soumaya Gheryani","Drona Kandhai","Luigi Borasi"
     ]
     
     # Sort the speakers alphabetically by last name
@@ -107,7 +107,7 @@ def main():
     st.image('EL Jam.jpg', width = 600 ,output_format = "JPEG")
 
     st.subheader(":blue[Sponsors]")
-    st.write("This event is organized by the collaboration of several universities and organizations. Financial support is also received from FWO Scientific Research Network ModSimFIE and DAAD- Deutscher Akademischer Austauschdienst with funds from the German Foreign Office.")
+    st.write("This event is organized by the collaboration of several universities and organizations. Financial support is also received from FWO Scientific Research Network ModSimFIE, DAAD- Deutscher Akademischer Austauschdienst with funds from the German Foreign Office and Swedish Research Council grants (2020-04697)")
 
     st.subheader(":blue[Organizers]")
     organizers = [
