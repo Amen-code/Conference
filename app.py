@@ -10,10 +10,10 @@ def generate_names(name):
     st.write(f"**{name}**")
     
 def main():
-    st.set_page_config(" Hammamet conference 2024-2025",page_icon="Logo.png")
+    st.set_page_config(" Hammamet conference 2023-2024",page_icon="Logo.png")
     st.title("Stochastics in Mathematical Finance and Physics Conference")
     st.markdown('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">', unsafe_allow_html=True)
-    st.markdown("Time and place: <i class='fas fa-clock'></i> Oct. 20-Oct. 24, 2025, <i class='fas fa-map-marker-alt'></i> Radisson Blue Resort Thalasso, Hammamet, Tunisia", unsafe_allow_html=True)
+    st.markdown("Time and place: <i class='fas fa-clock'></i> Oct. 21-Oct. 25, 2024, <i class='fas fa-map-marker-alt'></i> Radisson Blue Resort Thalasso, Hammamet, Tunisia", unsafe_allow_html=True)
     st.write("---")
     st.write("The conference is an occasion to bring together researchers in the beautiful Hammamet to discuss recent developments in stochastics with applications to mathematical physics and finance. The link of the previous conference is available [here](https://www.mn.uio.no/math/english/research/projects/storm/events/conferences/Stochastics%20in%20Mathematical%20Finance%20and%20Physics/).")
     # Display conference name
@@ -45,21 +45,21 @@ def main():
     st.write("\nA full list of speakers will be available together with the program. This includes:")
     # List of speakers
     plenary_speakers = [
-        "Fred Espen Benth", "Tahir Chouli", "Abderrazek Karoui", "Antonis Papapantoleon", "Ivan Nourdin",
-        "Sebastian Kassing", "Sonia Mazzucchi", "Michael Kupper"
+        "Francesco Russo", "Fabrice Djete", "Thorsten Schmidt", "Jean Daniel Mukam", "Stefan Gerhold",
+        "Daniel Linders", "Christian Bayer", "Sonja Cox", "Blanka Horvath", "Benjamin Jourdain", "Hedi Nabli"
     ]
     
     invited_speakers = [
-        "Nacira Agram", "Griselda Deelstra", "Christa Cuchiero", "Anis Matoussi", "Chiheb Ben Hamouda", 
-        "Youssef Ouknine", "Stefania Ugolini", "Luigi Borasi", "Jean Daniel Mukam", "Stefan Tappe",
-        "Wissal Sabagh", "Max Sauerbrey", "Barbara Rudiger", "Bernt Oksendal", 
-        "Michele Vanmaele" , "Giulia Di Nunno", "Josef Teichmann", "Olfa Draouil","Astrid Hilbert","Martin Friesen","Nizar Touzi","Caroline Hillairet","Asma Khedher"
+        "Christa Cuchiero", "Griselda Deelstra", "Sven Karbach", "Pere Diaz", "Stefan Tappe", 
+        "Mohamed Ben Alaya", "Mohamed Mnif", "Anis Rezgui", "Boris Jidjou Moghomye", "Mohamed Louriki",
+        "Youssef Ouknine", "Roger Pettersson", "Nacira Agram", "Florian Krach", 
+        "Francesca Primavera" , "Kristof Wiedermann", "Ole Canadas", "Emmet Lawless","Naoufel Salhi","Chiraz Trabelsi","Andreas Petrsson","Soumaya Gheryani","Drona Kandhai","Luigi Borasi"
     ]
-    Contributed_speakers = ["Mariem Abdellatif","Kaoutar Nasroallah","Mohammed Amine Jalal","Irene Ventura","Mohamed Louriki","Ihsan Arharas"]
+    
     # Sort the speakers alphabetically by last name
     plenary_speakers_sorted = sorted(plenary_speakers, key=lambda name: name.split()[-1])
     invited_speakers_sorted = sorted(invited_speakers, key=lambda name: name.split()[-1])
-    Contributed_speakers_sorted = sorted(Contributed_speakers, key=lambda name: name.split()[-1])
+    
     # Display Plenary Speakers
     st.subheader("List of confirmed Plenary speakers")
     for i in range(0, len(plenary_speakers_sorted), 3):
@@ -82,16 +82,7 @@ def main():
     
     st.write("---")
 
-    # Display Invited Speakers
-    st.subheader(" List of confirmed Invited speakers")
-    for i in range(0, len(Contributed_speakers_sorted), 3):
-        cols = st.columns(3)
-        for j, col in enumerate(cols):
-            if i + j < len(Contributed_speakers_sorted):
-                with col:
-                    generate_names(Contributed_speakers_sorted[i + j])
-    
-    st.write("---")
+
 
     # Button to register (redirects to Google Form)
     st.subheader(":blue[Registration]")
