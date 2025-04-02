@@ -112,7 +112,7 @@ def main():
     st.subheader(":blue[Organizers]")
     organizers = [
     ("Saloua Mani Aouadi", "Tunis El Manar University"),
-    ("Giulia di Nunno", "University of Oslo"),
+    ("Giulia Di Nunno", "University of Oslo"),
     ("Olfa Draouil", "Tunis El Manar University"),
     ("Martin Friesen", "Dublin City University"),
     ("Astrid Hilbert", "Linnaeus University"),
